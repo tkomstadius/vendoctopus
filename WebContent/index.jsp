@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<p>Hej</p>
+	<button>Sök</button>
+	<button>Registrera</button>
 </body>
 </html>
