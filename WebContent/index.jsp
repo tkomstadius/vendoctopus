@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<button>Sök</button>
+	<button>Sök på nå</button>
 	<button>Registrera</button>
 </body>
 </html>
