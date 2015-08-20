@@ -3,7 +3,7 @@ package customer;
 public class CustomerInfo {
 
 	String social = "";
-	String name = "hj";
+	String name = "";
 	String adress = "";
 	String zip = "";
 	

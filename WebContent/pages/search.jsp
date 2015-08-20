@@ -23,7 +23,7 @@
 				<form method="POST">
 					<input type="text" class="form-control" placeholder="Sök på personnummer" name="social">
 					<span class="input-group-btn">
-						<button class="btn btn-success" type="submit">Go!</button>
+						<button class="btn btn-success" type="submit" id="searchNum">Go!</button>
 					</span>
 				</form>
 			</div>
@@ -40,7 +40,7 @@
 			<form role="form" method="post">
 				<div class="form-group">
 					<label for="sSecNumber">Personnummer:</label> 
-					<input type="sSecNumber" class="form-control" id="sSecNumber" value="<%= customer.getSocial() %>" readonly>
+					<input type="sSecNumber" class="form-control" id="sSecNumber" value="<%= customer.getSocial() %>">
 				</div>
 				<div class="form-group">
 					<label for="pName">Namn:</label> <input type="pName"
@@ -71,7 +71,22 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript">
-	 $("#sSecNumber").prop(disabled, true);
+$(function () {
+	$("#sSecNumber").prop('disabled', true);
+	$("#pName").prop('disabled', true);
+	$("#pAdress").prop('disabled', true);
+	$("#pPostalNR").prop('disabled', true);
+	$("#send").hide();
+});
+
+$("#change").click(function() {
+	this.hide();
+	$("#send").show();
+	$("#pName").prop('disabled', false);
+	$("#pAdress").prop('disabled', false);
+	$("#pPostalNR").prop('disabled', false);
+	
+});
 </script>
 <!--
 
