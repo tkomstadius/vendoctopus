@@ -1,11 +1,20 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
 
+ <link href="css/bootstrap.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
 <%@include file="/pages/header.jsp"%>
 
+<nav class="navbar navbar-inverse" role="navigation">
+  <div class="navbar-collapse collapse">
+  
+<div class="container">
 
+
+   <a href="#" class="pull-left" id="logo"><img src="clogowhite.svg"></a>
+        
+   
+  </div>
+  </div>
+</nav>    
 <div class="container">
 	<div class="row">
 	

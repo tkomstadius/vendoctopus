@@ -1,70 +1,69 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
 
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link href="../style.css" rel="stylesheet">
 <%@include file="header.jsp"%>
+<%@include file="navbar.jsp"%>
 
-<input type="text" placeholder="700101xxx"/>
-	<a href=''>Utöka sök</a>
-	<a href='customer.jsp'>Sök</a>
-	
+
+
 <div class="container">
 	<div class="row">
-	
-		<div class="col-md-3"><h1 id="heading"> Vendo </h1>
-			</div>
-		
 		<div class="col-md-3">
-		
+			<h1 id="heading">Sök kund</h1>
 		</div>
+		<div class="col-md-3"></div>
 		<div class="col-md-3">
-
 			<div class="col-md-3"></div>
 		</div>
 	</div>
 
 	<div class="row">
-		
-		<div class="col-md-3">
-			<a href="pages/register.jsp">
+		<div class="col-md-6">
+			<div class="input-group">
+			
+			<form action="sample.jsp" method="POST">
+				<input type="search" class="form-control" placeholder="Sök kunder">
+				<span class="input-group-btn">
+					<button class="btn btn-success" type="button">Go!</button>
+				</span>
+				</form>
+			</div>
+			<!-- /input-group -->
 
-				<div class="jumbotron">
-
-					<h2 id="titleicon">Ny kund</h2>
-					<img src="1440022256_Add-Male-User.ico" alt="add" id="imgButton">
-
-
-				</div>
-			</a>
 		</div>
-		<div class="col-md-3">
+		<div class="col-md-2"></div>
+		<div class="col-md-2"></div>
+		<div class="col-md-2"></div>
 
-			<a href="pages/search.jsp">
-
-				<div class="jumbotron">
-
-					<h2 id="titleicon">Sök kund</h2>
-					<img src="1440022541_Search-Male-User.ico" alt="add" id="imgButton">
-
-				</div>
-			</a>
 	</div>
-<div class="col-md-3">
-			
-		</div>
-			<div class="col-md-3">
-			
+	<div class="row" id="pInfoForm">
+		<div class="col-md-6">
+			<form role="form">
+				<div class="form-group">
+					<label for="sSecNumber">Personnummer:</label> <input
+						type="sSecNumber" class="form-control" id="sSecNumber">
+				</div>
+				<div class="form-group">
+					<label for="pName">Namn:</label> <input type="pName"
+						class="form-control" id="pName">
+				</div>
+<div class="form-group">
+					<label for="pAdress">Adress:</label> <input type="pAdress"
+						class="form-control" id="pAdress">
+				</div>
 
-				
-				
-				
+<div class="form-group">
+					<label for="pPostalNR">Postnummer:</label> <input type="pPostalNR"
+						class="form-control" id="pPostalNR">
+				</div>
 
-			
-			
-			
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
 		</div>
-	
+		<div class="col-md-2"></div>
+		<div class="col-md-2"></div>
+		<div class="col-md-2"></div>
+
 	</div>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -74,4 +73,3 @@
 <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
-	
