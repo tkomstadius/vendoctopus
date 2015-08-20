@@ -1,4 +1,5 @@
-
+<jsp:useBean id="customer" class="customer.CustomerInfo" scope="session"/>
+<jsp:setProperty name="customer" property="*"/>
 <link href="../css/bootstrap.css" rel="stylesheet">
 <link href="../style.css" rel="stylesheet">
 <%@include file="header.jsp"%>
@@ -21,10 +22,10 @@
 		<div class="col-md-6">
 			<div class="input-group">
 			
-			<form action="sample.jsp" method="POST">
-				<input type="search" class="form-control" placeholder="Sök kunder">
+			<form method="post">
+				<input type="search" class="form-control" placeholder="Sök på personnummer" name="social">
 				<span class="input-group-btn">
-					<button class="btn btn-success" type="button">Go!</button>
+					<button class="btn btn-success" type="submit">Go!</button>
 				</span>
 				</form>
 			</div>
@@ -40,21 +41,21 @@
 		<div class="col-md-6">
 			<form role="form">
 				<div class="form-group">
-					<label for="sSecNumber">Personnummer:</label> <input
-						type="sSecNumber" class="form-control" id="sSecNumber">
+					<label for="sSecNumber">Personnummer:</label> 
+					<input type="sSecNumber" class="form-control" id="sSecNumber" value="<%= customer.getSocial() %>" name=>
 				</div>
 				<div class="form-group">
 					<label for="pName">Namn:</label> <input type="pName"
-						class="form-control" id="pName">
+						class="form-control" id="pName" value="<%= customer.getName() %>">
 				</div>
 <div class="form-group">
 					<label for="pAdress">Adress:</label> <input type="pAdress"
-						class="form-control" id="pAdress">
+						class="form-control" id="pAdress" value=" <%= customer.getAdress() %>">
 				</div>
 
 <div class="form-group">
 					<label for="pPostalNR">Postnummer:</label> <input type="pPostalNR"
-						class="form-control" id="pPostalNR">
+						class="form-control" id="pPostalNR" value="<%= customer.getZip() %>">
 				</div>
 
 				<button type="submit" class="btn btn-default">Submit</button>
