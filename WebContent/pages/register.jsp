@@ -24,19 +24,19 @@
 			<form role="form">
 				<div class="form-group">
 					<label for="sSecNumber">Personnummer:</label> 
-					<input type="sSecNumber" class="form-control" id="sSecNumber" value="">
+					<input type="text" class="form-control" id="sSecNumber" value="">
 				</div>
 				<div class="form-group">
-					<label for="pName">Namn:</label> <input type="pName"
+					<label for="pName">Namn:</label> <input type="text"
 						class="form-control" id="pName" value="">
 				</div>
 <div class="form-group">
-					<label for="pAdress">Adress:</label> <input type="pAdress"
+					<label for="pAdress">Adress:</label> <input type="text"
 						class="form-control" id="pAdress" value="">
 				</div>
 
 <div class="form-group">
-					<label for="pPostalNR">Postnummer:</label> <input type="pPostalNR"
+					<label for="pPostalNR">Postnummer:</label> <input type="text"
 						class="form-control" id="pPostalNR" value="">
 				</div>
 

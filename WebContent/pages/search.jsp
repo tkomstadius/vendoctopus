@@ -24,7 +24,7 @@
 			<div class="input-group">
 			
 
-				<input type="search" class="form-control" placeholder="Sök på personnummer" name="social">
+				<input type="text" class="form-control" placeholder="Sök på personnummer" name="social">
 				<span class="input-group-btn">
 					<button class="btn btn-success" type="submit">Go!</button>
 				</span>
@@ -43,19 +43,19 @@
 			<form role="form">
 				<div class="form-group">
 					<label for="sSecNumber">Personnummer:</label> 
-					<input type="sSecNumber" class="form-control" id="sSecNumber" value="<%= customer.getSocial() %>" name=>
+					<input type="text" class="form-control" id="sSecNumber" value="<%= customer.getSocial() %>" name=>
 				</div>
 				<div class="form-group">
-					<label for="pName">Namn:</label> <input type="pName"
+					<label for="pName">Namn:</label> <input type="text"
 						class="form-control" id="pName" value="<%= customer.getName() %>">
 				</div>
 <div class="form-group">
-					<label for="pAdress">Adress:</label> <input type="pAdress"
+					<label for="pAdress">Adress:</label> <input type="text"
 						class="form-control" id="pAdress" value=" <%= customer.getAdress() %>">
 				</div>
 
 <div class="form-group">
-					<label for="pPostalNR">Postnummer:</label> <input type="pPostalNR"
+					<label for="pPostalNR">Postnummer:</label> <input type="text"
 						class="form-control" id="pPostalNR" value="<%= customer.getZip() %>">
 				</div>
 
