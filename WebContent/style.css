@@ -1,1 +1,61 @@
-@CHARSET "ISO-8859-1";
+body {
+	font: 14px/1.5 HelveticaNeueW01-55Roma, HelveticaNeue-Roman,
+		HelveticaNeue, Helvetica, Roboto, "Myriad Pro", Myriad, Arial,
+		"Lucida Grande", sans-serif;
+	margin: 0;
+	color: #353535;
+}
+
+.jumbotron {
+	padding: 30px;
+	margin-top: 10px;
+	background-image: linear-gradient(#f2f2f2, #c2c2c2),
+		linear-gradient(to bottom, #f2f2f2 0, #c2c2c2 100%);
+	text-align: center;
+	margin-top: 10px;
+}
+
+#logo {
+	padding: 20px;
+	padding-left: 0px;
+}
+/*input[type=image]{
+    max-width: 100%;
+    width: auto;
+}*/
+#imgButton {
+	max-width: 100%;
+	width: auto;
+}
+
+#titleicon {
+	font-size: 2.4rem;
+	line-height: 1.16666667;
+	margin-bottom: 0;
+	font-weight: bold;
+	color: #353535;
+	margin-bottom: 20px;
+}
+
+.navbar {
+	background: #353535;
+	border-radius: 0px;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.jumbotron:hover {
+	background-image: linear-gradient(#c2c2c2, #c2c2c2),
+		linear-gradient(to bottom, #c2c2c2 0, #c2c2c2 100%);
+}
+
+#heading {
+	color: #353535;
+	font-weight: normal;
+	font-size: 40px;
+	font-size: 4rem;
+	line-height: 1.2;
+	font-weight: bold;
+}
