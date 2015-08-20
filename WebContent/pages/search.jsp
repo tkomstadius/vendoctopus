@@ -5,6 +5,12 @@
 <%@include file="header.jsp"%>
 <%@include file="navbar.jsp"%>
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> df5512383319aea3449802c5a7567fd6fbd45b30
 <div class="container">
 	<div class="row">
 		<div class="col-md-3">
@@ -20,12 +26,12 @@
 		<div class="col-md-6">
 			<div class="input-group">
 			
-			<form method="post">
-				<input type="search" class="form-control" placeholder="Sök på personnummer" name="social">
+
+				<input type="text" class="form-control" placeholder="Sök på personnummer" name="social">
 				<span class="input-group-btn">
 					<button class="btn btn-success" type="submit">Go!</button>
 				</span>
-				</form>
+				
 			</div>
 			<!-- /input-group -->
 

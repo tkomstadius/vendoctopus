@@ -1,6 +1,7 @@
 package customer;
 
 public class CustomerInfo {
+
 	String social = "";
 	String name = "hj";
 	String adress = "";
