@@ -32,7 +32,6 @@ public class CustomerInfo {
 		zip=db.getZipcode();
 		return zip;}
 
-
 	public void setSocial(String value)
 	{
 		social = value;
@@ -40,4 +39,21 @@ public class CustomerInfo {
 		System.out.print("LLLLLLLLLLLLLLLLLL");
 	}
 
+	
+	public void setName(String value)
+	{
+		name = value;
+		System.out.println(name);
+	}
+	
+	public void setAdress(String value)
+	{
+		adress = value;
+	}
+	
+	public void setZip(String value)
+	{
+		zip = value;
+	}
+	
 }

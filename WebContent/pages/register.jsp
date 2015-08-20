@@ -1,12 +1,59 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Vendo</title>
-</head>
-<body>
+<jsp:useBean id="customer" class="customer.CustomerInfo" scope="session"/>
+<jsp:setProperty name="customer" property="*"/>
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link href="../style.css" rel="stylesheet">
+<%@include file="header.jsp"%>
+<%@include file="navbar.jsp"%>
 
+
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<h1 id="heading">Registrera ny kund</h1>
+		</div>
+		<div class="col-md-3"></div>
+		<div class="col-md-3">
+			
+		</div>
+	</div>
+
+	
+	<div class="row" id="pInfoForm">
+		<div class="col-md-6">
+			<form role="form">
+				<div class="form-group">
+					<label for="sSecNumber">Personnummer:</label> 
+					<input type="text" class="form-control" id="sSecNumber" placeholder="Personnummer" name="social">
+				</div>
+				<div class="form-group">
+					<label for="pName">Namn:</label> <input type="text"
+						class="form-control" id="pName" placeholder="För- och Efternamn" name="name">
+				</div>
+<div class="form-group">
+					<label for="pAdress">Adress:</label> <input type="text"
+						class="form-control" id="pAdress" placeholder="Adress" name="adress">
+				</div>
+
+<div class="form-group">
+					<label for="pPostalNR">Postnummer:</label> <input type="text"
+						class="form-control" id="pPostalNR" placeholder="Postnummer" name="zip">
+				</div>
+
+				<button type="submit" class="btn btn-success">Submit</button>
+			</form>
+		</div>
+		<div class="col-md-2"></div>
+		<div class="col-md-2"></div>
+		<div class="col-md-2"></div>
+
+	</div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
