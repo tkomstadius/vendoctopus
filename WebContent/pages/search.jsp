@@ -5,8 +5,6 @@
 <%@include file="header.jsp"%>
 <%@include file="navbar.jsp"%>
 
-
-
 <div class="container">
 	<div class="row">
 		<div class="col-md-3">
@@ -39,25 +37,25 @@
 	</div>
 	<div class="row" id="pInfoForm">
 		<div class="col-md-6">
-			<form role="form">
+			<form role="form" method="post">
 				<div class="form-group">
 					<label for="sSecNumber">Personnummer:</label> 
-					<input type="sSecNumber" class="form-control" id="sSecNumber" value="<%= customer.getSocial() %>" name=>
+					<input type="sSecNumber" class="form-control" id="sSecNumber" value="<%= customer.getSocial() %>" readonly>
 				</div>
 				<div class="form-group">
 					<label for="pName">Namn:</label> <input type="pName"
-						class="form-control" id="pName" value="<%= customer.getName() %>">
+						class="form-control" id="pName" value="<%= customer.getName() %>" name="name">
 				</div>
 <div class="form-group">
 					<label for="pAdress">Adress:</label> <input type="pAdress"
-						class="form-control" id="pAdress" value=" <%= customer.getAdress() %>">
+						class="form-control" id="pAdress" value=" <%= customer.getAdress() %>" name="adress">
 				</div>
 
 <div class="form-group">
 					<label for="pPostalNR">Postnummer:</label> <input type="pPostalNR"
-						class="form-control" id="pPostalNR" value="<%= customer.getZip() %>">
+						class="form-control" id="pPostalNR" value="<%= customer.getZip() %>" name="zip">
 				</div>
-
+				<button>Ändra</button>
 				<button type="submit" class="btn btn-default">Submit</button>
 			</form>
 		</div>
@@ -72,5 +70,12 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	 $("#sSecNumber").prop(disabled, true);
+</script>
+<!--
+
+//-->
+</script>
 </body>
 </html>

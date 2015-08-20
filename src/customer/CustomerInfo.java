@@ -2,9 +2,9 @@ package customer;
 
 public class CustomerInfo {
 	String social = "";
-	String name = "Therése Komstadius";
-	String adress = "Elias lönnrots väg 27";
-	String zip = "16846";
+	String name = "hj";
+	String adress = "";
+	String zip = "";
 	
 	public String getSocial() {return social;}
 	
@@ -19,6 +19,22 @@ public class CustomerInfo {
 	{
 		social = value;
 		System.out.println(social);
+	}
+	
+	public void setName(String value)
+	{
+		name = value;
+		System.out.println(name);
+	}
+	
+	public void setAdress(String value)
+	{
+		adress = value;
+	}
+	
+	public void setZip(String value)
+	{
+		zip = value;
 	}
 	
 	
