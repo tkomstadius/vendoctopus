@@ -1,7 +1,7 @@
 package customer;
 
 public class CustomerInfo {
-	String social = "";
+	String social = "456505";
 	String name = "Therése Komstadius";
 	String adress = "Elias lönnrots väg 27";
 	String zip = "16846";
