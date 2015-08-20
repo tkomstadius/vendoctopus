@@ -10,7 +10,7 @@
 <div class="container">
 
 
-   <a href="#" class="pull-left" id="logo"><img src="clogowhite.svg"></a>
+   <a href="" class="pull-left" id="logo"><img src="clogowhite.svg"></a>
         
    
   </div>

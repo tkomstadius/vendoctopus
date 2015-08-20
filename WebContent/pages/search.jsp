@@ -71,22 +71,7 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript">
-$(function () {
-	$("#sSecNumber").prop('disabled', true);
-	$("#pName").prop('disabled', true);
-	$("#pAdress").prop('disabled', true);
-	$("#pPostalNR").prop('disabled', true);
-	$("#send").hide();
-});
 
-$("#change").click(function() {
-	this.hide();
-	$("#send").show();
-	$("#pName").prop('disabled', false);
-	$("#pAdress").prop('disabled', false);
-	$("#pPostalNR").prop('disabled', false);
-	
-});
 </script>
 <!--
 
