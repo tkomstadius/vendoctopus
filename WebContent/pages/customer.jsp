@@ -8,9 +8,10 @@
 </head>
 <body>
 	<p>Searched social security</p>
+	<%String name = "Hej Hejsson"; %>
 	<div>
 		<p>Namn</p>
-		<input type="text" name="Namn" value="found name" readonly>
+		<input type="text" name="Namn" value="<%= name %>" readonly>
 	</div>
 	<div>
 		<p>Adress</p>
