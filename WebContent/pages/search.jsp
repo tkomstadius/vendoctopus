@@ -20,12 +20,12 @@
 		<div class="col-md-6">
 			<div class="input-group">
 			
-
-				<input type="text" class="form-control" placeholder="Sök på personnummer" name="social">
-				<span class="input-group-btn">
-					<button class="btn btn-success" type="submit">Go!</button>
-				</span>
-				
+				<form method="POST">
+					<input type="text" class="form-control" placeholder="Sök på personnummer" name="social">
+					<span class="input-group-btn">
+						<button class="btn btn-success" type="submit">Go!</button>
+					</span>
+				</form>
 			</div>
 			<!-- /input-group -->
 
@@ -55,8 +55,8 @@
 					<label for="pPostalNR">Postnummer:</label> <input type="pPostalNR"
 						class="form-control" id="pPostalNR" value="<%= customer.getZip() %>" name="zip">
 				</div>
-				<button>Ändra</button>
-				<button type="submit" class="btn btn-default">Submit</button>
+				<button id="change">Ändra</button>
+				<button type="submit" class="btn btn-default" id="send">Submit</button>
 			</form>
 		</div>
 		<div class="col-md-2"></div>
