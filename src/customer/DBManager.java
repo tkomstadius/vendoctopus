@@ -19,11 +19,12 @@ public class DBManager {
 	static String adress;
 	static String zipcode;
 	static String queryString;
+	static boolean found = false;
 		
-	public static void addData() throws SQLException, ClassNotFoundException{
+	public static void addData(String prsnum, String nm, String adrs, String zip) throws SQLException, ClassNotFoundException{
 		try{
 			connection = (Connection) DriverManager.getConnection(connectionString, username, psw);
-			PreparedStatement statement = (PreparedStatement) connection.prepareStatement("INSERT INTO `comhemcase2015`.`customer` (`personnumber`, `name`, `adress`, `zipcode`) VALUES ('4331331111', 'Sam Sammy', 'Samirgatan 3', '33122');");
+			PreparedStatement statement = (PreparedStatement) connection.prepareStatement("INSERT INTO `comhemcase2015`.`customer` (`personnumber`, `name`, `adress`, `zipcode`) VALUES ('" + prsnum +"', '" + nm + "', '" + adrs + "', '" + zip + "');");
 			int rows = statement.executeUpdate();
 		}
 		catch(SQLException e){
@@ -35,9 +36,10 @@ public class DBManager {
 		}
 	}
 	
-	public static void searchData() throws ClassNotFoundException, SQLException{
+	public static void searchData(String query) throws ClassNotFoundException, SQLException{
 		Class.forName("com.mysql.jdbc.Driver");
-
+		queryString = query;
+		found = false;
 		try{
 			System.out.println("INNAN");
 			connection = (Connection) DriverManager.getConnection(connectionString, username, psw);
@@ -57,16 +59,20 @@ public class DBManager {
 				adress = data.getString(4);
 				zipcode = data.getString(5);
 			System.out.println(personnumber + " " + name + " " + adress + " " + zipcode);
+			found = true;
 			}
 			connection.close();
 		}
-		
 	}
 	
-	public static void changeData() throws SQLException{
+	public static void changeData(String prsnum, String nm, String adrs, String zip) throws SQLException{
 		try{
 			connection = (Connection) DriverManager.getConnection(connectionString, username, psw);
-			PreparedStatement statement = (PreparedStatement) connection.prepareStatement("UPDATE `comhemcase2015`.`customer` SET `personnumber`='444', `name`='Sam Sammi', `adress`='hej', `zipcode`='22222' WHERE `personnumber`='55555';");
+			System.out.println(prsnum);
+			System.out.println(nm);
+			System.out.println(adrs);
+			PreparedStatement statement = (PreparedStatement) connection.prepareStatement("UPDATE `comhemcase2015`.`customer` SET `name`= " +"'" + nm +"'" + ", `adress`= " +"'" + adrs + "'" + ", `zipcode`= " + "'" + zip + "'" + " WHERE `personnumber`= " + prsnum +";");
+
 			int rows = statement.executeUpdate();
 		}
 		catch(SQLException e){

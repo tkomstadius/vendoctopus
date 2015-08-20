@@ -18,7 +18,7 @@
 
 	<div class="row">
 		<div class="col-md-6">
-			<div class="input-group">
+			
 			
 				<form method="POST">
 					<input type="text" class="form-control" placeholder="Sök på personnummer" name="social">
@@ -26,7 +26,7 @@
 						<button class="btn btn-success" type="submit" id="searchNum">Go!</button>
 					</span>
 				</form>
-			</div>
+			
 			<!-- /input-group -->
 
 		</div>
@@ -40,23 +40,22 @@
 			<form role="form" method="post">
 				<div class="form-group">
 					<label for="sSecNumber">Personnummer:</label> 
-					<input type="sSecNumber" class="form-control" id="sSecNumber" value="<%= customer.getSocial() %>">
+					<input type="text" class="form-control" id="sSecNumber" value="<%= customer.getSocial() %>" placeholder="Personnummer">
 				</div>
 				<div class="form-group">
-					<label for="pName">Namn:</label> <input type="pName"
-						class="form-control" id="pName" value="<%= customer.getName() %>" name="name">
+					<label for="pName">Namn:</label> <input type="text"
+						class="form-control" id="pName" value="<%= customer.getName() %>" placeholder="För- och Efternamn" name="name">
 				</div>
 <div class="form-group">
-					<label for="pAdress">Adress:</label> <input type="pAdress"
-						class="form-control" id="pAdress" value=" <%= customer.getAdress() %>" name="adress">
+					<label for="pAdress">Adress:</label> <input type="text"
+						class="form-control" id="pAdress" value="<%= customer.getAdress() %>" placeholder="Adress" name="adress">
 				</div>
 
 <div class="form-group">
-					<label for="pPostalNR">Postnummer:</label> <input type="pPostalNR"
-						class="form-control" id="pPostalNR" value="<%= customer.getZip() %>" name="zip">
+					<label for="pPostalNR">Postnummer:</label> <input type="text"
+						class="form-control" id="pPostalNR" value="<%= customer.getZip() %>" placeholder="Postnummer" name="zip">
 				</div>
-				<button id="change">Ändra</button>
-				<button type="submit" class="btn btn-default" id="send">Submit</button>
+				<button type="submit" class="btn btn-default" id="send">Submit </button>
 			</form>
 		</div>
 		<div class="col-md-2"></div>
@@ -72,10 +71,6 @@
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript">
 
-</script>
-<!--
-
-//-->
 </script>
 </body>
 </html>
