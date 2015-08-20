@@ -1,6 +1,7 @@
 package customer;
 
 import java.sql.SQLException;
+import javax.swing.*;
 
 public class CustomerInfo {
 	String social;
@@ -64,7 +65,6 @@ public class CustomerInfo {
 		addData();
 	}
 	public void setData() throws SQLException{
-		System.out.println(name);
 		DBManager.changeData(social, name, adress, zip);
 		
 	}
@@ -72,5 +72,10 @@ public class CustomerInfo {
 		if(!db.found){
 			DBManager.addData(social, name, adress, zip);
 		}
+		else {
+			System.out.println("Finns redan som kund hos oss!");
+		}
+		
+
 	}
 }
