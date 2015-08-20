@@ -5,12 +5,6 @@
 <%@include file="header.jsp"%>
 <%@include file="navbar.jsp"%>
 
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> df5512383319aea3449802c5a7567fd6fbd45b30
 <div class="container">
 	<div class="row">
 		<div class="col-md-3">
