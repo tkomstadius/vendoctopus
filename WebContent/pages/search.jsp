@@ -19,7 +19,6 @@
 	<div class="row">
 		<div class="col-md-6">
 			
-			
 				<form method="POST">
 					<input type="text" class="form-control" placeholder="Sök på personnummer" name="social">
 					<span class="input-group-btn">
@@ -40,7 +39,7 @@
 			<form role="form" method="post">
 				<div class="form-group">
 					<label for="sSecNumber">Personnummer:</label> 
-					<input type="text" class="form-control" id="sSecNumber" value="<%= customer.getSocial() %>" placeholder="Personnummer">
+					<input type="number" class="form-control" id="sSecNumber" value="<%= customer.getSocial() %>" placeholder="Personnummer">
 				</div>
 				<div class="form-group">
 					<label for="pName">Namn:</label> <input type="text"
@@ -52,10 +51,10 @@
 				</div>
 
 <div class="form-group">
-					<label for="pPostalNR">Postnummer:</label> <input type="text"
+					<label for="pPostalNR">Postnummer:</label> <input type="number"
 						class="form-control" id="pPostalNR" value="<%= customer.getZip() %>" placeholder="Postnummer" name="zip">
 				</div>
-				<button type="submit" class="btn btn-default" id="send">Submit </button>
+				<button type="submit" class="btn btn-success"  id="send" >Spara ändringar</button>
 			</form>
 		</div>
 		<div class="col-md-2"></div>

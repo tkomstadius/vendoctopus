@@ -60,17 +60,20 @@ public class CustomerInfo {
 	public void setZip(String value) throws SQLException, ClassNotFoundException
 	{
 		zip = value;
-		setData();
 		addData();
+		setData();
+		
 	}
-	public void setData() throws SQLException{
+	public void setData() throws SQLException, ClassNotFoundException{
 		System.out.println(name);
 		DBManager.changeData(social, name, adress, zip);
+		
 		
 	}
 	public void addData() throws ClassNotFoundException, SQLException{
 		if(!db.found){
 			DBManager.addData(social, name, adress, zip);
 		}
+		
 	}
 }

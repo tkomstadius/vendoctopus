@@ -32,7 +32,21 @@
 		</div>
 
 		<div class="row">
+<div class="col-md-3">
+			<a href=#>
 
+					<div class="jumbotron">
+
+						<h2 id="titleicon">Område</h2>
+						<img src="1440157349_Search-Globe.ico" alt="add"
+							id="imgButton">
+
+					</div>
+				</a>
+			
+			
+			
+			</div>
 			<div class="col-md-3">
 				<a href="pages/register.jsp">
 
@@ -58,7 +72,7 @@
 					</div>
 				</a>
 			</div>
-			<div class="col-md-3"></div>
+			
 			<div class="col-md-3"></div>
 
 		</div>

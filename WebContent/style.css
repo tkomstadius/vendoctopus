@@ -15,6 +15,12 @@ body {
 	margin-top: 10px;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display:none;
+}
+
 #logo {
 	padding: 20px;
 	padding-left: 0px;
@@ -61,4 +67,8 @@ a:hover {
 }
 #pInfoForm{
 	margin-top: 15px;
+}
+#searchNum{
+	margin-top:10px;
+
 }
